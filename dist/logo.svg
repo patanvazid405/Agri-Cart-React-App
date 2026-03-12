@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-label="agricart logo">
+  <defs>
+    <linearGradient id="leafGreen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6cc04a"/>
+      <stop offset="100%" stop-color="#16823a"/>
+    </linearGradient>
+    <linearGradient id="cartBlue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2c86c7"/>
+      <stop offset="100%" stop-color="#1c5d9d"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(24 8)">
+    <circle cx="84" cy="70" r="46" fill="none" stroke="#3caa45" stroke-width="7"/>
+    <path d="M53 65c-7-25 3-44 30-52-1 20-6 38-30 52Z" fill="url(#leafGreen)"/>
+    <path d="M70 45c0-20 14-34 31-40-2 19-10 31-31 40Z" fill="url(#leafGreen)"/>
+    <path d="M80 93c-14-31-6-56 21-73 8 28 1 54-21 73Z" fill="url(#leafGreen)"/>
+    <path d="M98 85c1-24 17-42 39-48-4 24-16 39-39 48Z" fill="url(#leafGreen)"/>
+    <path d="M46 74h18l10 36h47" fill="none" stroke="url(#cartBlue)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <path d="M74 111h55c10 0 16-6 19-18l8-26h-76" fill="none" stroke="url(#cartBlue)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <circle cx="86" cy="129" r="7" fill="#fff" stroke="url(#cartBlue)" stroke-width="6"/>
+    <circle cx="116" cy="129" r="7" fill="#fff" stroke="url(#cartBlue)" stroke-width="6"/>
+  </g>
+  <g transform="translate(180 54)">
+    <text x="0" y="64" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-size="64" font-weight="700">
+      <tspan fill="#3fa93f">agri</tspan><tspan fill="#1f5fa8">cart</tspan>
+    </text>
+    <text x="4" y="108" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#575757" letter-spacing="1.2">
+      YOUR FIELD-TO-FORK PARTNER
+    </text>
+  </g>
+</svg>
