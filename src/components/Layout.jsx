@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 
 function Layout() {
   const { itemCount } = useCart()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
     <div className="app-shell">
@@ -12,11 +16,29 @@ function Layout() {
             <img className="brand-logo" src="/logo.svg" alt="AgriCart" />
           </NavLink>
 
-          <nav className="nav-links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/products">Shop</NavLink>
-            <NavLink to="/checkout">Checkout</NavLink>
-            <NavLink className="cart-link" to="/cart">
+          <button
+            className={isMenuOpen ? 'menu-toggle is-open' : 'menu-toggle'}
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+
+          <nav className={isMenuOpen ? 'nav-links is-open' : 'nav-links'}>
+            <NavLink onClick={closeMenu} to="/">
+              Home
+            </NavLink>
+            <NavLink onClick={closeMenu} to="/products">
+              Shop
+            </NavLink>
+            <NavLink onClick={closeMenu} to="/checkout">
+              Checkout
+            </NavLink>
+            <NavLink className="cart-link" onClick={closeMenu} to="/cart">
               Cart
               <span>{itemCount}</span>
             </NavLink>
@@ -39,7 +61,7 @@ function Layout() {
             <h4>Delivery</h4>
             <p>Fast doorstep delivery with fresh-stock replenishment every day.</p>
             <h4>Support</h4>
-            <p>Call us : +91 9876543210</p>
+            <p>Call us : +91 0025896301</p>
             <p>Email : agricart@gmail.com</p>
           </div>
           <div className="footer-map">
