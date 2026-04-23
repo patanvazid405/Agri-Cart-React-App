@@ -56,6 +56,31 @@ img {
   margin: 0 auto;
 }
 
+.app-error-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.app-error-card {
+  width: min(680px, 100%);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(180, 35, 24, 0.18);
+  box-shadow: 0 18px 40px rgba(23, 48, 31, 0.12);
+}
+
+.app-error-card h1,
+.app-error-card p {
+  margin-top: 0;
+}
+
+.app-error-help {
+  color: rgba(23, 48, 31, 0.72);
+}
+
 .app-shell {
   min-height: 100vh;
 }
@@ -579,12 +604,199 @@ img {
 .search-box input,
 .checkout-form input,
 .checkout-form textarea,
-.checkout-form select {
+.checkout-form select,
+.crmWebToEntityForm input[type='text'],
+.crmWebToEntityForm textarea {
   width: 100%;
   border: 1px solid rgba(23, 48, 31, 0.16);
   border-radius: 0.9rem;
   background: rgba(255, 255, 255, 0.88);
   padding: 0.9rem 1rem;
+}
+
+.contact-page .section-heading {
+  max-width: 760px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.contact-showcase,
+.crmWebToEntityForm {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.contact-showcase {
+  display: grid;
+  gap: 1.35rem;
+  align-content: start;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.48), transparent 22%),
+    linear-gradient(155deg, rgba(47, 95, 56, 0.95), rgba(26, 52, 31, 0.94));
+  color: #f8fff5;
+}
+
+.contact-showcase h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  line-height: 1;
+}
+
+.contact-showcase p {
+  margin: 0;
+  max-width: 46ch;
+  color: rgba(248, 255, 245, 0.82);
+}
+
+.contact-kicker {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-highlights {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.contact-highlight-card,
+.contact-details-card {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+}
+
+.contact-highlight-card {
+  padding: 1rem 1.05rem;
+}
+
+.contact-highlight-card strong,
+.contact-details-card strong,
+.contact-details-card small {
+  display: block;
+}
+
+.contact-highlight-card strong {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.contact-highlight-card span {
+  color: rgba(248, 255, 245, 0.78);
+}
+
+.contact-details-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem 1.05rem;
+}
+
+.contact-details-card small {
+  margin-bottom: 0.2rem;
+  color: rgba(248, 255, 245, 0.64);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+}
+
+.crmWebToEntityForm {
+  width: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(220, 234, 216, 0.7), transparent 28%),
+    rgba(255, 255, 255, 0.9);
+  color: var(--green-900);
+}
+
+.crmWebToEntityForm * {
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+.crmWebToEntityForm .zoho-hidden-field {
+  display: none;
+}
+
+.zcwf_title {
+  margin-bottom: 0.35rem;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.zoho-form-intro {
+  margin: 0 0 1.1rem;
+  color: rgba(23, 48, 31, 0.72);
+}
+
+.zcwf_row {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.32fr) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 1rem 0;
+}
+
+.zcwf_col_lab {
+  padding-top: 0.8rem;
+  font-weight: 700;
+}
+
+.zcwf_col_lab span {
+  color: #b42318;
+}
+
+.crmWebToEntityForm textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.crmWebToEntityForm .zcwf_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-right: 0.7rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--border);
+  color: #17301f;
+  background: rgba(255, 255, 255, 0.76);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.crmWebToEntityForm .zcwf_button:hover {
+  transform: translateY(-1px);
+}
+
+.crmWebToEntityForm .formsubmit.zcwf_button {
+  color: #fff;
+  background: linear-gradient(135deg, var(--green-700), var(--green-600));
+  box-shadow: var(--shadow);
+}
+
+.crmWebToEntityForm .formsubmit.zcwf_button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.zcwf_actions {
+  grid-template-columns: minmax(0, 1fr);
+  margin-bottom: 0;
 }
 
 .details-grid,
@@ -796,6 +1008,7 @@ img {
 
 @media (max-width: 900px) {
   .sale-banner,
+  .contact-grid,
   .details-grid,
   .cart-layout,
   .checkout-layout,
@@ -879,5 +1092,28 @@ img {
 
   .cart-item-summary {
     text-align: left;
+  }
+
+  .crmWebToEntityForm {
+    padding: 1rem;
+  }
+
+  .contact-showcase {
+    padding: 1.2rem;
+  }
+
+  .zcwf_row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .zcwf_col_lab {
+    padding-top: 0;
+  }
+
+  .crmWebToEntityForm .zcwf_button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.7rem;
   }
 }

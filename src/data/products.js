@@ -1,3 +1,5 @@
+import { publicAsset } from '../utils/assets'
+
 export const categories = [
   'All',
   'Vegetables',
@@ -15,7 +17,7 @@ export const products = [
     category: 'Vegetables',
     price: 42,
     unit: 'kg',
-    image: '/images/products/fresh-tomatoes.jpg',
+    image: publicAsset('images/products/fresh-tomatoes.jpg'),
     shortDescription: 'Sun-ripened tomatoes ideal for curries, salads, and sauces.',
     description:
       'Locally sourced red tomatoes with a balanced sweet and tangy taste. Packed fresh every morning for home kitchens and small retailers.',
@@ -27,7 +29,7 @@ export const products = [
     category: 'Vegetables',
     price: 68,
     unit: 'box',
-    image: '/images/products/cherry-tomatoes.jpg',
+    image: publicAsset('images/products/cherry-tomatoes.jpg'),
     shortDescription: 'Small juicy tomatoes for salads, pasta, and snack bowls.',
     description:
       'Sweet cherry tomatoes with bright color and crisp texture. Useful for salads, pizza toppings, and premium retail displays.',
@@ -39,7 +41,7 @@ export const products = [
     category: 'Vegetables',
     price: 35,
     unit: 'kg',
-    image: '/images/products/organic-potatoes.jpg',
+    image: publicAsset('images/products/organic-potatoes.jpg'),
     shortDescription: 'Firm farm potatoes suited for frying, boiling, and roasting.',
     description:
       'Naturally grown potatoes with clean skin and rich texture. Suitable for daily meals, bulk cooking, and snack preparations.',
@@ -51,7 +53,7 @@ export const products = [
     category: 'Vegetables',
     price: 54,
     unit: 'kg',
-    image: '/images/products/baby-potatoes.jpg',
+    image: publicAsset('images/products/baby-potatoes.jpg'),
     shortDescription: 'Tender small potatoes perfect for roasting and herb dishes.',
     description:
       'Carefully graded baby potatoes with smooth skin and quick cooking time. Ideal for tandoori, grilled, and pan-roasted recipes.',
@@ -63,7 +65,7 @@ export const products = [
     category: 'Vegetables',
     price: 38,
     unit: 'kg',
-    image: '/images/products/red-onions.jpg',
+    image: publicAsset('images/products/red-onions.jpg'),
     shortDescription: 'Kitchen staple onions with crisp layers and strong flavor.',
     description:
       'Fresh red onions sorted for size and firmness. Suitable for curries, gravies, salads, and restaurant prep.',
@@ -75,7 +77,7 @@ export const products = [
     category: 'Vegetables',
     price: 24,
     unit: 'bundle',
-    image: '/images/products/spinach.jpg',
+    image: publicAsset('images/products/spinach.jpg'),
     shortDescription: 'Leafy spinach bunch for dal, curry, and healthy meals.',
     description:
       'Freshly cut spinach leaves washed and bundled for home use. Good for soups, saute, and green smoothies.',
@@ -87,7 +89,7 @@ export const products = [
     category: 'Vegetables',
     price: 46,
     unit: 'kg',
-    image: '/images/products/lady-finger.jpg',
+    image: publicAsset('images/products/lady-finger.jpg'),
     shortDescription: 'Tender okra pods selected for stir fry and curries.',
     description:
       'Farm-fresh lady finger with uniform size and soft seeds. Best for dry fry, masala curries, and daily cooking.',
@@ -99,7 +101,7 @@ export const products = [
     category: 'Vegetables',
     price: 62,
     unit: 'kg',
-    image: '/images/products/green-peas.jpg',
+    image: publicAsset('images/products/green-peas.jpg'),
     shortDescription: 'Sweet peas ready for pulao, curry, and snacks.',
     description:
       'Fresh peas with bright green color and soft texture. Convenient for mixed vegetables, poha, and stuffing dishes.',
@@ -111,7 +113,7 @@ export const products = [
     category: 'Vegetables',
     price: 48,
     unit: 'piece',
-    image: '/images/products/cauliflower.jpg',
+    image: publicAsset('images/products/cauliflower.jpg'),
     shortDescription: 'Fresh cauliflower head for sabzi, pakora, and mixed veg dishes.',
     description:
       'Market-fresh cauliflower with tight florets and clean white color. Suitable for curries, paratha stuffing, and daily home cooking.',
@@ -123,7 +125,7 @@ export const products = [
     category: 'Vegetables',
     price: 34,
     unit: 'piece',
-    image: '/images/products/cabbage.jpg',
+    image: publicAsset('images/products/cabbage.jpg'),
     shortDescription: 'Crisp cabbage for sabzi, salad, and stir-fry use.',
     description:
       'Compact cabbage with fresh green leaves and firm weight. Good for Chinese-style cooking, mixed veg sabzi, and salads.',
@@ -135,7 +137,7 @@ export const products = [
     category: 'Vegetables',
     price: 36,
     unit: 'piece',
-    image: '/images/products/bottle-gourd.jpg',
+    image: publicAsset('images/products/bottle-gourd.jpg'),
     shortDescription: 'Tender bottle gourd for curry, kofta, and light home meals.',
     description:
       'Fresh lauki with soft skin and mild flavor. Suitable for sabzi, juice, kofta, and simple daily cooking.',
@@ -147,7 +149,7 @@ export const products = [
     category: 'Vegetables',
     price: 12,
     unit: 'bundle',
-    image: '/images/products/coriander.jpg',
+    image: publicAsset('images/products/coriander.jpg'),
     shortDescription: 'Fresh coriander bundle for chutney, garnish, and masala prep.',
     description:
       'Aromatic coriander leaves tied in fresh bundles. Ideal for garnishing curries, making green chutney, and regular kitchen use.',
@@ -159,7 +161,7 @@ export const products = [
     category: 'Fruits',
     price: 180,
     unit: 'kg',
-    image: '/images/products/alphonso-mangoes.jpg',
+    image: publicAsset('images/products/alphonso-mangoes.jpg'),
     shortDescription: 'Premium seasonal mangoes with dense pulp and fragrant sweetness.',
     description:
       'Carefully selected mangoes from trusted orchards. Great for direct consumption, juices, desserts, and fruit gifting.',
@@ -171,7 +173,7 @@ export const products = [
     category: 'Fruits',
     price: 58,
     unit: 'dozen',
-    image: '/images/products/banana-robusta.jpg',
+    image: publicAsset('images/products/banana-robusta.jpg'),
     shortDescription: 'Fresh bananas rich in energy, fiber, and natural sweetness.',
     description:
       'Handpicked bananas with consistent size and flavor. Suitable for breakfast, smoothies, lunchboxes, and retail shelves.',
@@ -183,7 +185,7 @@ export const products = [
     category: 'Fruits',
     price: 140,
     unit: 'kg',
-    image: '/images/products/fresh-apples.jpg',
+    image: publicAsset('images/products/fresh-apples.jpg'),
     shortDescription: 'Crisp apples for lunch boxes, juices, and daily snacking.',
     description:
       'Firm apples with sweet-tart flavor and attractive finish. Useful for fruit bowls, baking, and quick snacks.',
@@ -195,7 +197,7 @@ export const products = [
     category: 'Fruits',
     price: 165,
     unit: 'kg',
-    image: '/images/products/pomegranates.jpg',
+    image: publicAsset('images/products/pomegranates.jpg'),
     shortDescription: 'Juicy pomegranates filled with bright ruby arils.',
     description:
       'Premium fruit selected for sweetness and seed quality. Suitable for salads, desserts, juices, and health-focused diets.',
@@ -207,7 +209,7 @@ export const products = [
     category: 'Fruits',
     price: 78,
     unit: 'kg',
-    image: '/images/products/guava.jpg',
+    image: publicAsset('images/products/guava.jpg'),
     shortDescription: 'Fresh guava for fruit chaat, juice, and everyday snacking.',
     description:
       'Firm guava with balanced sweetness and crisp bite. Useful for fruit plates, fresh juice, and Indian-style fruit masala serving.',
@@ -219,7 +221,7 @@ export const products = [
     category: 'Rice',
     price: 74,
     unit: 'kg',
-    image: '/images/products/sona-masoori-rice.jpg',
+    image: publicAsset('images/products/sona-masoori-rice.jpg'),
     shortDescription: 'Lightweight aromatic rice for daily home cooking.',
     description:
       'Cleaned and polished rice grains with low starch and soft texture after cooking. Best for regular meals, tiffins, and catering use.',
@@ -231,7 +233,7 @@ export const products = [
     category: 'Rice',
     price: 64,
     unit: 'kg',
-    image: '/images/products/idli-rice.jpg',
+    image: publicAsset('images/products/idli-rice.jpg'),
     shortDescription: 'Short grain rice for idli, dosa batter, and soft breakfasts.',
     description:
       'Selected grains that grind smoothly and ferment well. Useful for homes, tiffin makers, and breakfast vendors.',
@@ -243,7 +245,7 @@ export const products = [
     category: 'Grains',
     price: 48,
     unit: 'kg',
-    image: '/images/products/whole-wheat.jpg',
+    image: publicAsset('images/products/whole-wheat.jpg'),
     shortDescription: 'Stone-cleaned wheat grains for flour milling and storage.',
     description:
       'Nutritious whole wheat suitable for homemade atta, bakery applications, and long-term pantry stocking.',
@@ -255,7 +257,7 @@ export const products = [
     category: 'Grains',
     price: 44,
     unit: 'kg',
-    image: '/images/products/yellow-maize.jpg',
+    image: publicAsset('images/products/yellow-maize.jpg'),
     shortDescription: 'Dry maize kernels for flour, feed, and traditional recipes.',
     description:
       'Uniformly dried yellow maize sourced from quality farms. Useful for household cooking, feed supply, and small agribusiness use.',
@@ -267,7 +269,7 @@ export const products = [
     category: 'Grains',
     price: 78,
     unit: 'kg',
-    image: '/images/products/nutri-millets.jpg',
+    image: publicAsset('images/products/nutri-millets.jpg'),
     shortDescription: 'Ancient grains for porridge, rotis, and healthy meals.',
     description:
       'Mixed millets packed for balanced diets and long pantry life. Good for breakfast bowls, dosa batter, and diabetic-friendly menus.',
@@ -279,7 +281,7 @@ export const products = [
     category: 'Grains',
     price: 92,
     unit: 'kg',
-    image: '/images/products/red-lentils.jpg',
+    image: publicAsset('images/products/red-lentils.jpg'),
     shortDescription: 'Fast-cooking lentils for soups, dals, and comfort food.',
     description:
       'Cleaned red lentils with even grain size and reliable cooking texture. Suitable for homes, hostels, and commercial kitchens.',
@@ -291,7 +293,7 @@ export const products = [
     category: 'Dairy',
     price: 32,
     unit: 'litre',
-    image: '/images/products/farm-milk.jpg',
+    image: publicAsset('images/products/farm-milk.jpg'),
     shortDescription: 'Fresh full-cream milk delivered chilled and ready to use.',
     description:
       'Daily collected milk with smooth texture and rich taste. Ideal for tea, coffee, sweets, curd making, and everyday consumption.',
@@ -303,7 +305,7 @@ export const products = [
     category: 'Dairy',
     price: 88,
     unit: 'pack',
-    image: '/images/products/paneer-block.jpg',
+    image: publicAsset('images/products/paneer-block.jpg'),
     shortDescription: 'Soft paneer block for curries, snacks, and high-protein meals.',
     description:
       'Fresh paneer with firm body and soft bite. Suitable for tikkas, gravies, stuffing, and retail dairy counters.',
@@ -315,7 +317,7 @@ export const products = [
     category: 'Dairy',
     price: 245,
     unit: 'jar',
-    image: '/images/products/cow-ghee.jpg',
+    image: publicAsset('images/products/cow-ghee.jpg'),
     shortDescription: 'Rich golden ghee for cooking, sweets, and traditional meals.',
     description:
       'Clarified butter packed in a sealed jar with a smooth aroma and granular texture. Ideal for tempering, sweets, and festive cooking.',
@@ -327,7 +329,7 @@ export const products = [
     category: 'Farm Essentials',
     price: 96,
     unit: 'tray',
-    image: '/images/products/country-eggs.jpg',
+    image: publicAsset('images/products/country-eggs.jpg'),
     shortDescription: 'Nutritious farm eggs with strong shells and rich yolks.',
     description:
       'Collected from small poultry farms with quality feed practices. Good for families, bakeries, and protein-focused diets.',
@@ -339,7 +341,7 @@ export const products = [
     category: 'Farm Essentials',
     price: 210,
     unit: 'jar',
-    image: '/images/products/forest-honey.jpg',
+    image: publicAsset('images/products/forest-honey.jpg'),
     shortDescription: 'Natural honey jar for breakfast, desserts, and immunity use.',
     description:
       'Filtered honey with deep color and smooth pour. Good for toast, tea, sweets, and pantry stocking.',
@@ -351,7 +353,7 @@ export const products = [
     category: 'Farm Essentials',
     price: 85,
     unit: 'pack',
-    image: '/images/products/seeds-mix.jpg',
+    image: publicAsset('images/products/seeds-mix.jpg'),
     shortDescription: 'Garden seed mix for home growers and small farm plots.',
     description:
       'Packed assortment of selected seeds suitable for kitchen gardens, balcony pots, and seasonal planting use.',
@@ -360,3 +362,4 @@ export const products = [
 ]
 
 export const featuredProducts = products.slice(0, 10)
+

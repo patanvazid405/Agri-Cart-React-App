@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import { publicAsset } from '../utils/assets'
 
 function Layout() {
   const { itemCount } = useCart()
@@ -13,7 +14,7 @@ function Layout() {
       <header className="site-header">
         <div className="container nav-bar">
           <NavLink className="brand" to="/">
-            <img className="brand-logo" src="/logo.svg" alt="AgriCart" />
+            <img className="brand-logo" src={publicAsset('logo.svg')} alt="AgriCart" />
           </NavLink>
 
           <button
@@ -37,6 +38,9 @@ function Layout() {
             </NavLink>
             <NavLink onClick={closeMenu} to="/checkout">
               Checkout
+            </NavLink>
+            <NavLink onClick={closeMenu} to="/contact">
+              Contact
             </NavLink>
             <NavLink className="cart-link" onClick={closeMenu} to="/cart">
               Cart
@@ -73,7 +77,7 @@ function Layout() {
               rel="noreferrer"
             >
               <span className="map-favicon">
-                <img src="/logo.svg" alt="" />
+                <img src={publicAsset('logo.svg')} alt="" />
               </span>
               <span>
                 <strong>Open Location in Maps</strong>

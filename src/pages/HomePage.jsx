@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import { categories, featuredProducts, products } from '../data/products'
+import { publicAsset } from '../utils/assets'
 
 function HomePage() {
   return (
@@ -30,7 +31,7 @@ function HomePage() {
 
           <div className="sale-visual">
             <div className="sale-photo-ring">
-              <img src="/images/products/hero-farm.jpg" alt="Green agricultural field" />
+              <img src={publicAsset('images/products/hero-farm.jpg')} alt="Green agricultural field" />
             </div>
             <div className="sale-bottom-grid">
               <div className="sale-stat-card">
